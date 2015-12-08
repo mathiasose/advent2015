@@ -1,6 +1,6 @@
 defmodule FileHelper do
   def read_lines(path) do
-    (File.read! "advent/input/I02.txt")
+    (File.read! path)
     |> (String.split "\n")
   end
 
