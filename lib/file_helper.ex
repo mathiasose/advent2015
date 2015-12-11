@@ -4,8 +4,8 @@ defmodule FileHelper do
     |> (String.split "\n")
   end
 
-  def strip_empty_lines([h|t]) do
-    [h|t]
+  def strip_empty_lines(l) do
+    l
     |> (Enum.filter &((String.rstrip &1) != ""))
   end
 end
